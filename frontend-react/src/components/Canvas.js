@@ -3,26 +3,28 @@ import {ActionCable} from 'react-actioncable-provider';
 import {HEADERS, API_ROOT} from '../constants';
 import { CompactPicker } from 'react-color';
 
+import SaveDrawingButton from './SaveDrawingButton'
+
+
 class Canvas extends Component {
   constructor () {
     super ()
     this.state = {
-      color: '#000000'
+      color: '#000000',
+      value: 1
     }
 
     this.ctx = null
     this.rect = null
     this.canvas = null
 
-    this.currentPosition = {x: 0, y: 0}
-    this.previousPosition = {x: 0, y: 0}
-
-    this.lineStart = {x: 0, y: 0}
-    this.lineEnd = {x: 0, y: 0}
+    // this.currentPosition = {x: 0, y: 0}
+    // this.previousPosition = {x: 0, y: 0}
+    //
+    // this.lineStart = {x: 0, y: 0}
+    // this.lineEnd = {x: 0, y: 0}
 
     this.drawing = false
-    // this.pressed = false
-    // this.moving = false
 
     this.paths = []
 
@@ -34,7 +36,6 @@ class Canvas extends Component {
     this.ctx = ctx
     this.rect = canvas.getBoundingClientRect()
     this.canvas = canvas
-    // this.mainLoop()
   }
 
   draw = () => {
@@ -58,35 +59,20 @@ class Canvas extends Component {
     return {
       color: this.state.color,
       list: [],
-      strokeWidth: 1
+      strokeWidth: this.state.value
     }
   }
 
-  // this.canvas.onmouseup = canvas.onmouseleave = e => {
-  //   this.drawing = false;
-  // }
   handleMouseUpOrLeave = () => {
     this.drawing = false;
     this.sendPaths();
   }
 
-  // this.canvas.onmousedown = e => {
-  //   this.paths.push(makePath());
-  //   this.drawing = true;
-  // }
   handleMouseDown = () => {
     this.paths.push(this.makePath());
     this.drawing = true;
   }
 
-  // this.canvas.onmousemove = e => {
-  //   if (!drawing) return;
-  //
-  //   let x = ~~((e.clientX - this.rect.left) * 10) / 10
-  //   let y = ~~((e.clientY - this.rect.top) * 10) / 10
-  //   this.paths[paths.length - 1].list.push(x, y);
-  //   this.draw();
-  // }
   handleMouseMove = (e) => {
     if (!this.drawing) return;
 
@@ -96,55 +82,13 @@ class Canvas extends Component {
     this.draw();
   }
 
-  // data to be an array of objects with coordinates: ex. [ {x: 1, y: 1}, {x: 2, y: 2}]
-  //
-  // draw = (line) => {
-  //   const { ctx } = this.state;
-  //     ctx.beginPath();
-  //     ctx.moveTo(line[0].x, line[0].y);
-  //     ctx.lineTo(line[1].x, line[1].y);
-  //     ctx.strokeStyle = "black";
-  //     ctx.lineWidth = 2;
-  //     ctx.stroke();
-  // }
-  //
-  //
-  // handleMouseDown = (ev) => {
-  //   this.pressed = true;
-  //   this.lineStart = {x: ev.clientX, y: ev.clientY}
-  // }
-  //
-  // handleMouseUp = (ev) => {
-  //   this.pressed = false;
-  //   this.lineEnd = {x: ev.clientX, y: ev.clientY}
-  //   this.lineHistory.push([this.lineStart, this.lineEnd])
-  // }
-  //
-  // handleMouseMove = (ev) => {
-  //   let xx = ev.clientX;
-  //   let yy = ev.clientY;
-  //   this.currentPosition = {x: xx, y: yy}
-  //   this.moving = true;
-  // }
-  //
-  //
-  //
-  // mainLoop = () => {
-  //   if (this.pressed && this.moving && this.state.pos_prev) {
-  //     this.lineHistory.forEach(line => {
-  //       this.draw(line)
-  //     })
-  //     // fetch(`${API_ROOT}/canvas`, {
-  //     //   method: "POST",
-  //     //   headers: HEADERS,
-  //     //   body: JSON.stringify(this.lineHistory)
-  //     // })
-  //     this.moving = false;
-  //   }
-  //
-  //   this.setState({pos_prev: {x: this.state.pos.x, y: this.state.pos.y}});
-  //   setTimeout(this.mainLoop, 250);
-  // }
+
+  handleChange = (event) => {
+    this.setState({
+      value: event.target.value
+    })
+  }
+
 
   handleChangeComplete = (color) => {
     this.setState({
@@ -170,6 +114,19 @@ class Canvas extends Component {
     })
   }
 
+  saveDrawing = () => {
+    // fetch to save drawing
+    console.log('json', JSON.stringify(this.paths))
+    fetch(`${API_ROOT}/saved_drawings`, {
+      method: "POST",
+      headers: HEADERS,
+      body: JSON.stringify(this.paths)
+    })
+    .catch(err => {
+      console.log({err})
+    })
+  }
+
   render() {
     return (
       <div>
@@ -181,7 +138,6 @@ class Canvas extends Component {
           id="canvas"
           width="500"
           height="500"
-          style={{"borderStyle": "solid", "borderWidth": "3px", "borderColor": "black"}}
           onMouseUp={this.handleMouseUpOrLeave}
           onMouseLeave={this.handleMouseUpOrLeave}
           onMouseDown={this.handleMouseDown}
@@ -191,6 +147,11 @@ class Canvas extends Component {
           color={this.state.color}
           onChangeComplete={this.handleChangeComplete}
         />
+
+        <input id="slider" type="range" list="tickmarks" min="1" max="10" value={this.state.value} step="1" onChange={this.handleChange}/>
+
+        <SaveDrawingButton saveDrawing={this.saveDrawing} paths={this.state.paths}/>
+
       </div>
     )
   }

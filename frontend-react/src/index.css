@@ -12,3 +12,59 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#form {
+
+}
+
+#game-window {
+  position: absolute;
+  width: 1200px;
+  height: 670px;
+  top: 150px;
+  left: 50px;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: blue;
+}
+
+#canvas {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+
+.compact-picker {
+  position: absolute;
+  top: 560px;
+  left: -550px;
+}
+
+#slider {
+  position: absolute;
+  top: 600px;
+  left: 300px;
+}
+
+#save-drawing-button {
+  position: absolute;
+  top: 600px;
+  left: 450px;
+}
+
+
+
+#chatroom {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 60px;
+  left: 665px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: green;
+}
