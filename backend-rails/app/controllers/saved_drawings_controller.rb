@@ -7,7 +7,6 @@ class SavedDrawingsController < ApplicationController
 
   def create
     encodedString = ActiveSupport::JSON.encode(params)
-    byebug
     @drawing = SavedDrawing.new(paths_text: encodedString)
     if @drawing.save
       puts "SAVED SAVED SAVED SAVED SAVED!!!!!!!!!!!!!"

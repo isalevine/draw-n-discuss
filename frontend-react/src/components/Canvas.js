@@ -89,7 +89,7 @@ class Canvas extends Component {
     })
   }
 
-  
+
   handleChangeComplete = (color) => {
     this.setState({
       color: color.hex
@@ -147,9 +147,9 @@ class Canvas extends Component {
           color={this.state.color}
           onChangeComplete={this.handleChangeComplete}
         />
-  
-        <input type="range" list="tickmarks" min="1" max="10" value={this.state.value} step="1" onChange={this.handleChange}/>
-     
+
+        <input id="slider" type="range" list="tickmarks" min="1" max="10" value={this.state.value} step="1" onChange={this.handleChange}/>
+
         <SaveDrawingButton saveDrawing={this.saveDrawing} paths={this.state.paths}/>
 
       </div>
