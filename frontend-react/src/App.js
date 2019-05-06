@@ -4,6 +4,7 @@ import './App.css';
 
 import Canvas from './components/Canvas'
 import GameWindow from './components/GameWindow'
+import UserForm from './components/UserForm'
 
 class App extends Component {
 
@@ -11,6 +12,8 @@ class App extends Component {
     return (
       <div className="App">
         <GameWindow />
+        <UserForm />
+        <Canvas />
       </div>
     );
   }
