@@ -3,6 +3,9 @@ import {ActionCable} from 'react-actioncable-provider';
 import {HEADERS, API_ROOT} from '../constants';
 import { CompactPicker } from 'react-color';
 
+import SaveDrawingButton from './SaveDrawingButton'
+
+
 class Canvas extends Component {
   constructor () {
     super ()
@@ -102,6 +105,19 @@ class Canvas extends Component {
     })
   }
 
+  saveDrawing = () => {
+    // fetch to save drawing
+    console.log('json', JSON.stringify(this.paths))
+    fetch(`${API_ROOT}/saved_drawings`, {
+      method: "POST",
+      headers: HEADERS,
+      body: JSON.stringify(this.paths)
+    })
+    .catch(err => {
+      console.log({err})
+    })
+  }
+
   render() {
     return (
       <div>
@@ -111,6 +127,8 @@ class Canvas extends Component {
         />
         <canvas
           id="canvas"
+          width="500"
+          height="500"
           onMouseUp={this.handleMouseUpOrLeave}
           onMouseLeave={this.handleMouseUpOrLeave}
           onMouseDown={this.handleMouseDown}
@@ -120,6 +138,7 @@ class Canvas extends Component {
           color={this.state.color}
           onChangeComplete={this.handleChangeComplete}
         />
+        <SaveDrawingButton saveDrawing={this.saveDrawing} paths={this.state.paths}/>
       </div>
     )
   }

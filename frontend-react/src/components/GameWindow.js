@@ -8,7 +8,7 @@ class GameWindow extends Component {
   render() {
     return (
       <div id="game-window">
-        <Canvas />
+        <Canvas saveDrawing={this.saveDrawing}/>
         <Chatroom />
       </div>
     )
