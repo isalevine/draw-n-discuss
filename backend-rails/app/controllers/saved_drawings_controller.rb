@@ -1,8 +1,14 @@
 class SavedDrawingsController < ApplicationController
 
   def index
-    @drawings = SavedDrawing.all
-    render json: @drawings
+    drawings = SavedDrawing.all
+    drawing_list = []
+    drawings.each do |drawing|
+      byebug
+      json = ActiveSupport::JSON.decode(drawing.paths_text)
+      drawing_list << json
+    end
+    render json: drawing_list
   end
 
   def create
