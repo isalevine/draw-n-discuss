@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import {ActionCable} from 'react-actioncable-provider';
 import {HEADERS, API_ROOT} from '../constants';
+import { CompactPicker } from 'react-color';
 
 class Canvas extends Component {
   constructor () {
     super ()
+    this.state = {
+      color: '#000000'
+    }
 
     this.ctx = null
     this.rect = null
@@ -52,7 +56,7 @@ class Canvas extends Component {
 
   makePath = () => {
     return {
-      color: 'black',
+      color: this.state.color,
       list: [],
       strokeWidth: 1
     }
@@ -142,6 +146,12 @@ class Canvas extends Component {
   //   setTimeout(this.mainLoop, 250);
   // }
 
+  handleChangeComplete = (color) => {
+    this.setState({
+      color: color.hex
+    })
+  }
+
   handleReceivedPaths = (paths) => {
     console.log('handleReceivedPaths', paths)
     this.paths = paths._json
@@ -176,6 +186,10 @@ class Canvas extends Component {
           onMouseLeave={this.handleMouseUpOrLeave}
           onMouseDown={this.handleMouseDown}
           onMouseMove={this.handleMouseMove}
+        />
+        <CompactPicker
+          color={this.state.color}
+          onChangeComplete={this.handleChangeComplete}
         />
       </div>
     )
