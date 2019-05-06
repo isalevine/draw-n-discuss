@@ -24,6 +24,13 @@ class UserForm extends Component {
         'name': this.state.name,
       })
     })
+    // console.log(data)
+    .then(resp => resp.json())
+    .then(data => {
+      console.log(data.id)
+      sessionStorage.setItem('id', data.id)
+      sessionStorage.setItem('name', data.name)
+    })
   }
 
   render() {
