@@ -24,6 +24,7 @@ class UserForm extends Component {
         'name': this.state.name,
       })
     })
+    this.props.history.push('/draw')
   }
 
   render() {

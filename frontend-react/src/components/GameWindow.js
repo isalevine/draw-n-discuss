@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Canvas from './Canvas'
 import Chatroom from './Chatroom'
+import ViewGalleryButton from './ViewGalleryButton'
 
 
 class GameWindow extends Component {
@@ -10,6 +11,7 @@ class GameWindow extends Component {
       <div id="game-window">
         <Canvas saveDrawing={this.saveDrawing}/>
         <Chatroom />
+        <ViewGalleryButton history={this.props.history}/>
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import GalleryCard from './GalleryCard'
 import {API_ROOT, HEADERS} from '../constants/index.js'
+import ViewGameButton from './ViewGameButton'
 
 
 class CardContainer extends Component {
@@ -39,6 +40,8 @@ class CardContainer extends Component {
   render() {
     return (
       <div id="card-container">
+        <ViewGameButton history={this.props.history}/>
+        <br />
         {this.renderCards()}
       </div>
     )

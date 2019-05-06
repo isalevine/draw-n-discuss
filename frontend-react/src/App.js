@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Route, Link, BrowserRouter as Router} from 'react-router-dom'
+
 
 import {API_ROOT, HEADERS} from './constants/index.js'
 import Canvas from './components/Canvas'
@@ -13,12 +15,16 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <GameWindow />
-        <UserForm />
-        <CardContainer />
+      <Router>
+        <div className="App">
 
-      </div>
+        <Route exact path="/" component={UserForm} />
+        <Route path="/draw" component={GameWindow} />
+        <Route path="/gallery" component={CardContainer} />
+
+        </div>
+      </Router>
+
     );
   }
 

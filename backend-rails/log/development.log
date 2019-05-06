@@ -5537,3 +5537,1169 @@ Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
 
 CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
 CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started GET "/cable" for ::1 at 2019-05-06 15:25:12 -0700
+  [1m[35m (117.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/isalevine/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:25:13 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:25:25 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:25:25 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:25:26 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (8.7ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.87ms)
+Completed 200 OK in 86ms (Views: 13.1ms | ActiveRecord: 58.7ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:25:30 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:25:31 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:25:31 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:25:31 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.8ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (2.14ms)
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:25:31 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.6ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.74ms)
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 0.6ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:25:32 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 2.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:25:34 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:25:36 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:25:40 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:25:40 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:25:40 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:25:40 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (1.3ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (31.69ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 1.3ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:25:43 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:25:44 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:25:45 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:25:46 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:25:46 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:25:47 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:25:48 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:33 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:26:34 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:34 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:26:39 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:26:40 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:43 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:26:43 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:43 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:45 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:26:45 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:45 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:26:46 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:26:47 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:48 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:26:48 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:48 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:26:48 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:26:49 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:26:50 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:26:55 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:55 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:26:55 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:55 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:59 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:26:59 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:26:59 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:27:04 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:27:04 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:27:04 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:27:04 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.4ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.03ms)
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.4ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:27:05 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:27:07 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:27:08 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/canvas" for ::1 at 2019-05-06 15:27:09 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:27:09 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:27:10 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:27:11 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:27:12 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:27:40 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:27:40 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.5ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.98ms)
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-06 15:29:15 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:29:15 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:29:16 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:29:18 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:29:21 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:30:07 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:31:20 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:31:20 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:31:20 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:33:52 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:33:52 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:33:52 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:33:54 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:33:57 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:33:57 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/users" for ::1 at 2019-05-06 15:33:57 -0700
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"hi", "user"=>{"name"=>"hi"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (117.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "hi"], ["created_at", "2019-05-06 22:33:57.792951"], ["updated_at", "2019-05-06 22:33:57.792951"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.31ms)
+Completed 200 OK in 144ms (Views: 16.7ms | ActiveRecord: 124.3ms)
+
+
+Started POST "/canvas" for ::1 at 2019-05-06 15:34:12 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:34:12 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:37:15 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:37:15 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:37:16 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:37:22 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:37:22 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:37:23 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:37:23 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:37:23 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:37:25 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 9.1ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:37:26 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:37:48 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:37:49 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:37:49 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:37:49 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:38:09 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:38:09 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:38:09 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:38:10 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:38:46 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:39:24 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:39:24 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:40:39 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:41:52 -0700
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/isalevine/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:41:52 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:44:13 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:44:13 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/users" for ::1 at 2019-05-06 15:44:13 -0700
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"hi", "user"=>{"name"=>"hi"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "hi"], ["created_at", "2019-05-06 22:44:13.272889"], ["updated_at", "2019-05-06 22:44:13.272889"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (41.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.39ms)
+Completed 200 OK in 77ms (Views: 23.1ms | ActiveRecord: 49.5ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:45:25 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:45:25 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:45:25 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:45:29 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started POST "/users" for ::1 at 2019-05-06 15:45:31 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"hi", "user"=>{"name"=>"hi"}}
+  [1m[35m (4.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "hi"], ["created_at", "2019-05-06 22:45:31.458866"], ["updated_at", "2019-05-06 22:45:31.458866"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.12ms)
+Completed 200 OK in 37ms (Views: 0.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-06 15:45:31 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:45:31 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:46:35 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:46:35 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:46:35 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:47:27 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:47:27 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:47:27 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:47:32 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:47:32 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:47:32 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:47:34 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started POST "/users" for ::1 at 2019-05-06 15:47:37 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"hi", "user"=>{"name"=>"hi"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (2.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "hi"], ["created_at", "2019-05-06 22:47:37.296609"], ["updated_at", "2019-05-06 22:47:37.296609"]]
+  ↳ app/controllers/users_controller.rb:13
+Started GET "/cable" for ::1 at 2019-05-06 15:47:37 -0700
+  [1m[35m (48.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.2ms)
+Completed 200 OK in 57ms (Views: 0.9ms | ActiveRecord: 51.2ms)
+
+
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:47:37 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:47:38 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.9ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.0ms)
+Completed 200 OK in 29ms (Views: 4.9ms | ActiveRecord: 14.2ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:52:39 -0700
+Started POST "/users" for ::1 at 2019-05-06 15:52:41 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"hi", "user"=>{"name"=>"hi"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "hi"], ["created_at", "2019-05-06 22:52:41.676215"], ["updated_at", "2019-05-06 22:52:41.676215"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (41.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.13ms)
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 43.7ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-06 15:52:41 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:52:41 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:52:43 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 2.9ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:52:44 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:52:57 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:52:59 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:52:59 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:52:59 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:53:00 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.6ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.25ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.6ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:54:59 -0700
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:55:00 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.5ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.23ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:55:08 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.9ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.29ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cable" for ::1 at 2019-05-06 15:55:10 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:55:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:55:11 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.7ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (0.92ms)
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.7ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:55:15 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:55:20 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:55:20 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/users" for ::1 at 2019-05-06 15:55:20 -0700
+Processing by UsersController#create as JSON
+CanvasChannel is transmitting the subscription confirmation
+  Parameters: {"name"=>"hi", "user"=>{"name"=>"hi"}}
+CanvasChannel is streaming from canvas_channel
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "hi"], ["created_at", "2019-05-06 22:55:20.955109"], ["updated_at", "2019-05-06 22:55:20.955109"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.11ms)
+Completed 200 OK in 7ms (Views: 0.6ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/canvas" for ::1 at 2019-05-06 15:55:24 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:55:25 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.8ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.42ms)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.8ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:55:46 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:55:48 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:55:48 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:56:25 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:56:25 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:56:26 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.7ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.74ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.7ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:56:33 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.4ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.02ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.4ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:56:36 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:56:38 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:56:48 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:56:49 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:56:50 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:56:50 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 15:56:51 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:56:51 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.8ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.49ms)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.8ms)
+
+
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:57:06 -0700
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:57:06 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.4ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.83ms)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:57:12 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.7ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (2.09ms)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:57:20 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.5ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.31ms)
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:57:24 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.4ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.31ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:58:31 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (45.1ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.37ms)
+Completed 200 OK in 50ms (Views: 2.5ms | ActiveRecord: 45.1ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:58:35 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.5ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.38ms)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:58:44 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.8ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.73ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:58:48 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.6ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.25ms)
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/saved_drawings" for ::1 at 2019-05-06 15:59:29 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (2.5ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.59ms)
+Completed 200 OK in 30ms (Views: 26.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/canvas" for ::1 at 2019-05-06 15:59:49 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:59:50 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 15:59:51 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 15:59:57 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 15:59:57 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started POST "/users" for ::1 at 2019-05-06 15:59:57 -0700
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"hi", "user"=>{"name"=>"hi"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "hi"], ["created_at", "2019-05-06 22:59:57.059358"], ["updated_at", "2019-05-06 22:59:57.059358"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.14ms)
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/canvas" for ::1 at 2019-05-06 15:59:59 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[130, 280, 134, 284, 149, 294, 196, 312, 239, 316, 298, 308, 340, 268, 373, 203, 391, 143, 399, 86, 399, 41, 388, 19, 360, 21, 323, 52, 300, 83, 274, 133, 266, 163, 266, 177, 269, 189, 276, 195, 286, 193, 291, 181, 293, 161, 289, 148, 265, 143, 231, 167, 204, 204, 186, 238, 176, 282, 181, 295, 201, 301, 226, 290, 251, 259, 266, 227, 271, 209, 272, 192, 267, 190, 254, 198, 245, 209, 239, 217, 237, 222], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[130, 280, 134, 284, 149, 294, 196, 312, 239, 316, 298, 308, 340, 268, 373, 203, 391, 143, 399, 86, 399, 41, 388, 19, 360, 21, 323, 52, 300, 83, 274, 133, 266, 163, 266, 177, 269, 189, 276, 195, 286, 193, 291, 181, 293, 161, 289, 148, 265, 143, 231, 167, 204, 204, 186, 238, 176, 282, 181, 295, 201, 301, 226, 290, 251, 259, 266, 227, 271, 209, 272, 192, 267, 190, 254, 198, 245, 209, 239, 217, 237, 222], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[130, 280, 134, 284, 149, 294, 196, 312, 239, 316, 298, 308, 340, 268, 373, 203, 391, 143, 399, 86, 399, 41, 388, 19, 360, 21, 323, 52, 300, 83, 274, 133, 266, 163, 266, 177, 269, 189, 276, 195, 286, 193, 291, 181, 293, 161, 289, 148, 265, 143, 231, 167, 20... (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 15:59:59 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[130, 280, 134, 284, 149, 294, 196, 312, 239, 316, 298, 308, 340, 268, 373, 203, 391, 143, 399, 86, 399, 41, 388, 19, 360, 21, 323, 52, 300, 83, 274, 133, 266, 163, 266, 177, 269, 189, 276, 195, 286, 193, 291, 181, 293, 161, 289, 148, 265, 143, 231, 167, 204, 204, 186, 238, 176, 282, 181, 295, 201, 301, 226, 290, 251, 259, 266, 227, 271, 209, 272, 192, 267, 190, 254, 198, 245, 209, 239, 217, 237, 222], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[130, 280, 134, 284, 149, 294, 196, 312, 239, 316, 298, 308, 340, 268, 373, 203, 391, 143, 399, 86, 399, 41, 388, 19, 360, 21, 323, 52, 300, 83, 274, 133, 266, 163, 266, 177, 269, 189, 276, 195, 286, 193, 291, 181, 293, 161, 289, 148, 265, 143, 231, 167, 204, 204, 186, 238, 176, 282, 181, 295, 201, 301, 226, 290, 251, 259, 266, 227, 271, 209, 272, 192, 267, 190, 254, 198, 245, 209, 239, 217, 237, 222], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[130, 280, 134, 284, 149, 294, 196, 312, 239, 316, 298, 308, 340, 268, 373, 203, 391, 143, 399, 86, 399, 41, 388, 19, 360, 21, 323, 52, 300, 83, 274, 133, 266, 163, 266, 177, 269, 189, 276, 195, 286, 193, 291, 181, 293, 161, 289, 148, 265, 143, 231, 167, 20... (via streamed from canvas_channel)
+Started GET "/cable" for ::1 at 2019-05-06 16:00:00 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 16:00:00 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:02 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:04 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 119, 302, 122, 269, 162, 262, 178, 255, 201, 255, 213, 257, 218, 263, 218, 271, 207, 274, 196, 274, 184, 272, 177, 264, 177], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 119, 302, 122, 269, 162, 262, 178, 255, 201, 255, 213, 257, 218, 263, 218, 271, 207, 274, 196, 274, 184, 272, 177, 264, 177], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 1... (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 1... (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:04 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 119, 302, 122, 269, 162, 262, 178, 255, 201, 255, 213, 257, 218, 263, 218, 271, 207, 274, 196, 274, 184, 272, 177, 264, 177], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 119, 302, 122, 269, 162, 262, 178, 255, 201, 255, 213, 257, 218, 263, 218, 271, 207, 274, 196, 274, 184, 272, 177, 264, 177], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 1... (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 1... (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:06 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 119, 302, 122, 269, 162, 262, 178, 255, 201, 255, 213, 257, 218, 263, 218, 271, 207, 274, 196, 274, 184, 272, 177, 264, 177], "strokeWidth"=>1}], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 119, 302, 122, 269, 162, 262, 178, 255, 201, 255, 213, 257, 218, 263, 218, 271, 207, 274, 196, 274, 184, 272, 177, 264, 177], "strokeWidth"=>1}], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 1... (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[{"color"=>"#000000", "list"=>[153, 261, 153, 261, 152, 260, 152, 265, 163, 277, 185, 287, 208, 291, 254, 294, 288, 284, 316, 254, 333, 212, 337, 178, 336, 155, 323, 131, 308, 132, 287, 157, 274, 183, 270, 197, 269, 210, 269, 217, 279, 219, 293, 206, 308, 178, 315, 152, 317, 135, 314, 1... (via streamed from canvas_channel)
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 16:00:08 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 16:00:08 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 16:00:08 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-06 16:00:11 -0700
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-06 16:00:11 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-06 16:00:11 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:20 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:21 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 16:00:25 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.7ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.45ms)
+Completed 200 OK in 4ms (Views: 2.2ms | ActiveRecord: 0.7ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:31 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Started GET "/saved_drawings" for ::1 at 2019-05-06 16:00:31 -0700
+Processing by SavedDrawingsController#index as */*
+  [1m[36mSavedDrawing Load (0.8ms)[0m  [1m[34mSELECT "saved_drawings".* FROM "saved_drawings"[0m
+  ↳ app/controllers/saved_drawings_controller.rb:6
+No serializer found for resource: {"_json"=>[{"color"=>"#d33115", "list"=>[114, 272, 114, 271, 114, 271, 117, 271, 123, 268, 139, 260, 158, 247, 173, 234, 184, 223, 195, 211, 202, 201, 210, 187, 215, 178, 219, 169, 222, 164, 224, 158, 226, 154, 226, 152, 227, 150, 227, 150, 227, 150, 227, 149, 227, 149, 227, 149, 227, 149, 227, 148, 227, 148, 227, 147, 227, 147, 227, 151, 227, 163, 227, 185, 220, 224, 215, 252, 207, 305, 204, 327, 201, 348, 200, 359, 199, 370, 199, 376, 198, 378, 198, 380, 198, 381, 198, 381, 198, 381, 197, 380, 196, 379, 194, 379, 192, 378, 185, 378], "strokeWidth"=>1}, {"color"=>"#d33115", "list"=>[118, 383, 121, 383, 131, 383, 161, 383, 189, 383, 218, 383, 243, 384, 257, 385, 272, 387, 279, 388, 285, 389, 290, 389, 293, 389, 295, 389, 296, 389, 297, 389, 297, 389], "strokeWidth"=>1}], "controller"=>"saved_drawings", "action"=>"create", "saved_drawing"=>{}}
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Array (1.82ms)
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.8ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:32 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:34 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:36 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-06 16:00:58 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
