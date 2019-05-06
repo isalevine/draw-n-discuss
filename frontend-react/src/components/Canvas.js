@@ -7,7 +7,8 @@ class Canvas extends Component {
   constructor () {
     super ()
     this.state = {
-      color: '#000000'
+      color: '#000000',
+      value: 1
     }
 
     this.ctx = null
@@ -58,7 +59,7 @@ class Canvas extends Component {
     return {
       color: this.state.color,
       list: [],
-      strokeWidth: 1
+      strokeWidth: this.state.value
     }
   }
 
@@ -146,6 +147,12 @@ class Canvas extends Component {
   //   setTimeout(this.mainLoop, 250);
   // }
 
+  handleChange = (event) => {
+    this.setState({
+      value: event.target.value
+    })
+  }
+
   handleChangeComplete = (color) => {
     this.setState({
       color: color.hex
@@ -191,6 +198,8 @@ class Canvas extends Component {
           color={this.state.color}
           onChangeComplete={this.handleChangeComplete}
         />
+      <input type="range" list="tickmarks" min="1" max="10" value={this.state.value} step="1" onChange={this.handleChange}/>
+
       </div>
     )
   }
