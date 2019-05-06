@@ -1,0 +1,2 @@
+class SavedDrawing < ApplicationRecord
+end

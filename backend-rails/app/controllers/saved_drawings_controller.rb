@@ -1,0 +1,2 @@
+class SavedDrawingsController < ApplicationController
+end
