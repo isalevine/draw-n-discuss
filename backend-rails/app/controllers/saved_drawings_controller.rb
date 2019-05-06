@@ -4,7 +4,6 @@ class SavedDrawingsController < ApplicationController
     drawings = SavedDrawing.all
     drawing_list = []
     drawings.each do |drawing|
-      byebug
       json = ActiveSupport::JSON.decode(drawing.paths_text)
       drawing_list << json
     end

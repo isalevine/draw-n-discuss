@@ -39,8 +39,6 @@ class Canvas extends Component {
   }
 
   draw = () => {
-    console.log("this.paths: ", this.paths)
-
     // this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
     this.paths.forEach(path => {
       this.ctx.lineWidth = path.strokeWidth;
