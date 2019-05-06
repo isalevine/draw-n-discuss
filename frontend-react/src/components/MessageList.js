@@ -4,6 +4,7 @@ import Message from './Message'
 class MessageList extends Component {
 
   render() {
+    debugger
     return (
       <div className="messageList">
         <ul>

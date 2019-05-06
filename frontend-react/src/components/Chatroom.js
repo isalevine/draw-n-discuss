@@ -21,7 +21,7 @@ class Chatroom extends Component {
 
   addNewMessage = (message) => {
     this.setState({
-      messages: [...this.state.messages, message ]
+      messages: [...this.state.messages, message]
     })
     fetch(`${API_ROOT}/messages`, {
       method: 'POST',
