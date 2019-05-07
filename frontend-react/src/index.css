@@ -6,6 +6,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: mediumseagreen;
 }
 
 code {
@@ -27,6 +29,7 @@ code {
   border-width: 5px;
   border-radius: 5px;
   border-color: blue;
+  background-color: khaki;
 }
 
 #canvas {
@@ -35,7 +38,8 @@ code {
   left: 30px;
   border-style: solid;
   border-width: 3px;
-  border-color: black;
+  border-color: green;
+  background-color: white;
 }
 
 .compact-picker {
@@ -67,19 +71,22 @@ code {
   border-style: solid;
   border-width: 3px;
   border-color: green;
+  background-color: lavender;
 }
 
 
 #card-container {
   position: absolute;
   width: 1200px;
-  height: 2600px;
+  min-height: 1000px;
+  overflow: hidden;
   top: 68px;
   left: 50px;
   border-style: solid;
   border-width: 3px;
   border-radius: 3px;
   border-color: red;
+  background-color: coral;
 }
 
 .card {
@@ -90,15 +97,16 @@ code {
   border-width: 1px;
   border-radius: 1px;
   border-color: purple;
+  background-color: white;
 }
 
 
-.edit-message-form {
+/* .edit-message-form {
   border-style: solid;
   border-width: 1px;
   border-radius: 1px;
-  border-color: yellow;
-}
+  border-color: purple;
+} */
 
 
 #header-bar {
@@ -116,7 +124,8 @@ code {
   width: 700px;
   height: 200px;
   border-style: solid;
-  border-width: 3px;
-  border-radius: 3px;
+  border-width: 5px;
+  border-radius: 5px;
   border-color: teal;
+  background-color: white;
 }

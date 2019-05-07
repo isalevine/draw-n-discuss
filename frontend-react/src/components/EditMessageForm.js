@@ -4,8 +4,8 @@ import React, {Component} from 'react'
 class EditMessageForm extends Component {
 
   handleSubmit = (ev) => {
-    ev.preventDefault()
-    // use this.props.userId to make a fetch-PATCH request...
+    ev.preventDefault();
+    this.props.hideEditForm();
     let text = document.getElementById(`edit-text-${this.props.messageId}`)
     this.props.patchMessage(text.value)
   }

@@ -26,8 +26,12 @@ class Message extends Component {
 
   renderEditForm = () => {
     if (this.state.edit) {
-      return <EditMessageForm message={this.props.message} messageId={this.props.message.id} patchMessage={this.patchMessage}/>
+      return <EditMessageForm message={this.props.message} messageId={this.props.message.id} patchMessage={this.patchMessage} hideEditForm={this.hideEditForm}/>
     }
+  }
+
+  hideEditForm = () => {
+    this.setState({edit: false})
   }
 
   patchMessage = (newMessage) => {
