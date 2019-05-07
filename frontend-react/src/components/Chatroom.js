@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {HEADERS, API_ROOT} from '../constants';
 import MessageList from './MessageList'
 import MessageForm from './MessageForm'
+import {ActionCable} from 'react-actioncable-provider';
 
 class Chatroom extends Component {
   constructor(){
@@ -33,11 +34,26 @@ class Chatroom extends Component {
     })
   }
 
+  handleReceivedMessages = (message) => {
+    console.log(message)
+    this.setState({
+      messages: [...this.state.messages, message]
+    })
+  }
+
   render() {
     return (
       <div id="chatroom">
-        <MessageList messages={this.state.messages} />
-        <MessageForm addNewMessage={this.addNewMessage} />
+        <ActionCable
+          channel={{channel: 'MessageChannel'}}
+          onReceived={this.handleReceivedMessages}
+        />
+        <MessageList
+          messages={this.state.messages}
+        />
+        <MessageForm
+          addNewMessage={this.addNewMessage}
+        />
       </div>
     )
   }
