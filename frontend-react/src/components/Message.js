@@ -11,6 +11,7 @@ class Message extends Component {
       edit: false,
       delete: false,
     }
+    this.displayName = ""
   }
 
   handleClickEdit = () => {
@@ -37,10 +38,19 @@ class Message extends Component {
     })
   }
 
+  checkName = () => {
+    if (this.props.name === "" || !this.props.name) {
+      this.displayName = this.props.tempName
+    } else {
+      this.displayName = this.props.name
+    }
+  }
+
   render() {
+    this.checkName();
     return (
       <div className="message">
-        <p>{this.props.name}: {this.props.text}</p>
+        <p>{this.displayName}: {this.props.text}</p>
 
         {this.renderEditForm()}
 

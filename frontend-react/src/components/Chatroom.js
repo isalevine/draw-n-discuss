@@ -7,7 +7,7 @@ class Chatroom extends Component {
   constructor(){
     super()
     this.state = {
-      messages: [],
+      messages: []
     }
   }
 
@@ -36,7 +36,7 @@ class Chatroom extends Component {
   render() {
     return (
       <div id="chatroom">
-        <MessageList messages={this.state.messages} />
+        <MessageList messages={this.state.messages} users={this.props.users}/>
         <MessageForm addNewMessage={this.addNewMessage} />
       </div>
     )

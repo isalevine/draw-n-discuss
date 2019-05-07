@@ -3,19 +3,26 @@ import Message from './Message'
 
 class MessageList extends Component {
 
+  createMessages = () => {
+    return this.props.messages.map(message => {
+      return (
+        <Message
+          message={message}
+          key={Math.random()}
+          text={message.text}
+          name={this.props.users[message.user_id]}
+          tempName={sessionStorage.getItem('name')}
+        />
+      )
+    })
+  }
+
   render() {
+    console.log("this.props.users: ", this.props.users)
     return (
       <div className="messageList">
         <ul>
-          {this.props.messages.map(message =>
-            <Message
-              message={message}
-              key={Math.random()}
-              userId={message.user_id}
-              text={message.text}
-              name={sessionStorage.getItem('name')}
-            />
-          )}
+          {this.createMessages()}
         </ul>
       </div>
     )
@@ -24,3 +31,6 @@ class MessageList extends Component {
 }
 
 export default MessageList
+
+// userId={message.user_id}
+// name={sessionStorage.getItem('name')}
