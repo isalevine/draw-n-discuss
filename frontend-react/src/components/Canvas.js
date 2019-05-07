@@ -4,6 +4,7 @@ import {HEADERS, API_ROOT} from '../constants';
 import { CompactPicker } from 'react-color';
 
 import SaveDrawingButton from './SaveDrawingButton'
+import ClearButton from './ClearButton'
 
 
 class Canvas extends Component {
@@ -125,6 +126,11 @@ class Canvas extends Component {
     })
   }
 
+  clearDrawing = () => {
+    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height)
+    this.paths = []
+  }
+
   render() {
     return (
       <div>
@@ -149,6 +155,7 @@ class Canvas extends Component {
         <input id="slider" type="range" list="tickmarks" min="1" max="10" value={this.state.value} step="1" onChange={this.handleChange}/>
 
         <SaveDrawingButton saveDrawing={this.saveDrawing} paths={this.state.paths}/>
+        <ClearButton clearDrawing={this.clearDrawing} paths={this.state.paths}/>
 
       </div>
     )

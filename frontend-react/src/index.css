@@ -56,10 +56,15 @@ code {
 
 #save-drawing-button {
   position: absolute;
-  top: 600px;
+  top: 590px;
   left: 450px;
 }
 
+#clear-drawing-button {
+  position: absolute;
+  top: 620px;
+  left: 450px;
+}
 
 
 #chatroom {
