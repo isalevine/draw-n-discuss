@@ -21,9 +21,9 @@ class Chatroom extends Component {
   }
 
   addNewMessage = (message) => {
-    this.setState({
-      messages: [...this.state.messages, message ]
-    })
+    // this.setState({
+    //   messages: [...this.state.messages, message ]
+    // })
     fetch(`${API_ROOT}/messages`, {
       method: 'POST',
       headers: HEADERS,
@@ -48,12 +48,14 @@ class Chatroom extends Component {
           channel={{channel: 'MessageChannel'}}
           onReceived={this.handleReceivedMessages}
         />
+        New Message:
+        <MessageForm
+          addNewMessage={this.addNewMessage}
+        />
+      (Scroll down to see new messages!)
         <MessageList
           messages={this.state.messages}
           users={this.props.users}
-        />
-        <MessageForm
-          addNewMessage={this.addNewMessage}
         />
       </div>
     )

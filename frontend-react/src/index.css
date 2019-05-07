@@ -66,12 +66,20 @@ code {
   position: absolute;
   width: 500px;
   height: 500px;
+  /* overflow: scroll; */
   top: 60px;
   left: 665px;
   border-style: solid;
   border-width: 3px;
   border-color: green;
   background-color: lavender;
+}
+
+.messageList {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  overflow: scroll;
 }
 
 
