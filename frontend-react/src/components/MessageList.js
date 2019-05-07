@@ -18,19 +18,18 @@ class MessageList extends Component {
   }
 
   render() {
-    console.log("this.props.users: ", this.props.users)
-    return (
-      <div className="messageList">
-        <ul>
-          {this.createMessages()}
-        </ul>
-      </div>
-    )
-  }
+    if(this.props.messages.length > 0) {
+      return (
+        <div className="messageList">
+          <ul>
+            {this.createMessages()}
+          </ul>
+        </div>
+      )} else {
+        return <div></div>
+      }
+   }
 
 }
 
 export default MessageList
-
-// userId={message.user_id}
-// name={sessionStorage.getItem('name')}

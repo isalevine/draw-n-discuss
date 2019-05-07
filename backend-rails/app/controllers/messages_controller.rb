@@ -12,6 +12,7 @@ class MessagesController < ApplicationController
 
   def create
     @message = Message.create(message_params)
+    ActionCable.server.broadcast 'message_channel', params
     render json: @message
   end
 
