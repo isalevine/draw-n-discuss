@@ -19,7 +19,6 @@ class UserForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    this.props.userLogin();
     fetch(`${API_ROOT}/users`, {
       method: 'POST',
       headers: HEADERS,
@@ -34,6 +33,7 @@ class UserForm extends Component {
       console.log(data.id)
       sessionStorage.setItem('id', data.id)
       sessionStorage.setItem('name', data.name)
+      this.props.rerenderApp()
     })
 
     this.props.history.push('/draw')

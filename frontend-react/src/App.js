@@ -10,29 +10,12 @@ import GameWindow from './components/GameWindow'
 import UserForm from './components/UserForm'
 import CardContainer from './components/CardContainer'
 import HeaderBar from './components/HeaderBar'
-import LoginWarning from './components/LoginWarning'
-// import WelcomeMessage from './components/WelcomeMessage'
 
 
 class App extends Component {
 
-  constructor() {
-    super()
-    this.state = {
-      loggedIn: false
-    }
-  }
-
-  userLogin = () => {
-    this.setState({loggedIn: true})
-  }
-
-  displayHeaderBar = () => {
-    if (this.state.loggedIn) {
-      return <HeaderBar />
-    } else {
-      return <LoginWarning />
-    }
+  rerenderApp = () => {
+    this.forceUpdate()
   }
 
   render() {
@@ -40,9 +23,9 @@ class App extends Component {
       <Router>
         <div className="App">
 
-        {this.displayHeaderBar()}
+        <HeaderBar />
 
-        <Route exact path="/" render={(props) => <UserForm {...props} userLogin={this.userLogin} />} />
+        <Route exact path="/" render={(props) => <UserForm {...props} rerenderApp={this.rerenderApp} />} />
         <Route path="/draw" component={GameWindow} />
         <Route path="/gallery" component={CardContainer} />
 
