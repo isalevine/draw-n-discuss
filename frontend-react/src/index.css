@@ -74,6 +74,12 @@ code {
   background-color: lavender;
 }
 
+.messageList {
+  width: 500px;
+  height: 400px;
+  overflow: scroll
+}
+
 
 #card-container {
   position: absolute;
