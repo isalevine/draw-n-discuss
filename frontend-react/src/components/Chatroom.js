@@ -13,6 +13,10 @@ class Chatroom extends Component {
   }
 
   componentDidMount = () => {
+    this.fetchMessages()
+  }
+
+  fetchMessages = () => {
     fetch(`${API_ROOT}/messages`)
       .then(resp => resp.json())
       .then(data => this.setState({
@@ -35,9 +39,10 @@ class Chatroom extends Component {
   }
 
   handleReceivedMessages = (message) => {
-    this.setState({
-      messages: [...this.state.messages, message]
-    })
+    // this.setState({
+    //   messages: [...this.state.messages, message]
+    // })
+    this.fetchMessages()
   }
 
   render() {
