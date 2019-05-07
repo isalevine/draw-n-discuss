@@ -9049,3 +9049,1345 @@ Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
 CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
 CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
 CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started GET "/cable" for ::1 at 2019-05-07 11:40:28 -0700
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.1.4) lib/pg.rb:56:in `initialize'
+pg (1.1.4) lib/pg.rb:56:in `new'
+pg (1.1.4) lib/pg.rb:56:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:692:in `connect'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.3) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.3) lib/active_record/connection_adapters/abstract/connection_pool.rb:1014:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.3) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.3) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.3) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.3) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.3) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.3) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.3) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (5.2.3) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/cable" for ::1 at 2019-05-07 11:40:42 -0700
+  [1m[35m (5.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:40:42 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 11:41:14 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 11:41:44 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:41:44 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 11:41:44 -0700
+Started GET "/users" for ::1 at 2019-05-07 11:41:44 -0700
+Started POST "/users" for ::1 at 2019-05-07 11:41:44 -0700
+Processing by MessagesController#index as */*
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+  [1m[36mMessage Load (13.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"Matt", "user"=>{"name"=>"Matt"}}
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[35m (8.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (8.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Matt"], ["created_at", "2019-05-07 18:41:44.613938"], ["updated_at", "2019-05-07 18:41:44.613938"]]
+  ↳ app/controllers/users_controller.rb:13
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (5.1ms)
+Completed 200 OK in 78ms (Views: 33.0ms | ActiveRecord: 39.1ms)
+
+
+  [1m[35m (32.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.77ms)
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.18ms)
+Completed 200 OK in 81ms (Views: 60.6ms | ActiveRecord: 19.2ms)
+
+
+Completed 200 OK in 81ms (Views: 11.0ms | ActiveRecord: 68.4ms)
+
+
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started GET "/messages" for ::1 at 2019-05-07 11:55:14 -0700
+Started GET "/cable" for ::1 at 2019-05-07 11:55:14 -0700
+Started GET "/users" for ::1 at 2019-05-07 11:55:14 -0700
+Started POST "/users" for ::1 at 2019-05-07 11:55:14 -0700
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+  ↳ /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:55:14 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (8.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+  [1m[36mMessage Load (3.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+Processing by UsersController#create as JSON
+  ↳ app/controllers/messages_controller.rb:5
+  Parameters: {"name"=>"Matt", "user"=>{"name"=>"Matt"}}
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+  [1m[35m (6.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (0.96ms)
+Completed 200 OK in 51ms (Views: 23.5ms | ActiveRecord: 26.7ms)
+
+
+  [1m[36mUser Create (7.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Matt"], ["created_at", "2019-05-07 18:55:14.329825"], ["updated_at", "2019-05-07 18:55:14.329825"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 42ms (Views: 0.9ms | ActiveRecord: 55.6ms)
+
+
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (4.07ms)
+Completed 200 OK in 90ms (Views: 42.0ms | ActiveRecord: 36.6ms)
+
+
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/messages" for ::1 at 2019-05-07 11:55:35 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"1", "user_id"=>"77", "message"=>{"text"=>"1", "user_id"=>"77"}}
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (1.8ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "1"], ["created_at", "2019-05-07 18:55:35.645622"], ["updated_at", "2019-05-07 18:55:35.645622"], ["user_id", 77]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"1", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"1", "user_id"=>"77"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.77ms)
+MessageChannel transmitting {"text"=>"1", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"1", "user_id"=>"77"}} (via streamed from message_channel)
+Completed 200 OK in 27ms (Views: 3.6ms | ActiveRecord: 4.9ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 11:59:03 -0700
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 11:59:03 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:59:03 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 11:59:03 -0700
+Started GET "/users" for ::1 at 2019-05-07 11:59:03 -0700
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.03ms)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mMessage Load (10.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (7.04ms)
+Completed 200 OK in 22ms (Views: 11.3ms | ActiveRecord: 10.3ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 11:59:06 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 11:59:06 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:59:06 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 11:59:06 -0700
+Started GET "/users" for ::1 at 2019-05-07 11:59:06 -0700
+Processing by UsersController#index as */*
+Processing by MessagesController#index as */*
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.28ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 1.7ms)
+
+
+  [1m[36mMessage Load (4.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (16.29ms)
+Completed 200 OK in 25ms (Views: 20.5ms | ActiveRecord: 4.2ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/messages" for ::1 at 2019-05-07 11:59:11 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"1", "user_id"=>"77", "message"=>{"text"=>"1", "user_id"=>"77"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (1.5ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "1"], ["created_at", "2019-05-07 18:59:11.906349"], ["updated_at", "2019-05-07 18:59:11.906349"], ["user_id", 77]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"1", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"1", "user_id"=>"77"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.31ms)
+MessageChannel transmitting {"text"=>"1", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"1", "user_id"=>"77"}} (via streamed from message_channel)
+Completed 200 OK in 14ms (Views: 1.0ms | ActiveRecord: 3.6ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 11:59:23 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:59:23 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 11:59:23 -0700
+Started GET "/users" for ::1 at 2019-05-07 11:59:23 -0700
+Processing by MessagesController#index as */*
+Started POST "/users" for ::1 at 2019-05-07 11:59:23 -0700
+  [1m[36mMessage Load (3.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+Processing by UsersController#create as JSON
+CanvasChannel is transmitting the subscription confirmation
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+Processing by UsersController#index as */*
+  Parameters: {"name"=>"jimy", "user"=>{"name"=>"jimy"}}
+CanvasChannel is streaming from canvas_channel
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (12.26ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 3.3ms)
+
+
+MessageChannel is transmitting the subscription confirmation
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+MessageChannel is streaming from message_channel
+  ↳ app/controllers/users_controller.rb:13
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.39ms)
+  [1m[36mUser Create (6.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "jimy"], ["created_at", "2019-05-07 18:59:23.971143"], ["updated_at", "2019-05-07 18:59:23.971143"]]
+  ↳ app/controllers/users_controller.rb:13
+Completed 200 OK in 17ms (Views: 14.1ms | ActiveRecord: 2.9ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+MessageChannel stopped streaming from message_channel
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (1.04ms)
+Completed 200 OK in 38ms (Views: 1.8ms | ActiveRecord: 9.3ms)
+
+
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/canvas" for ::1 at 2019-05-07 11:59:34 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 2ms (ActiveRecord: 4.6ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/messages" for ::1 at 2019-05-07 11:59:39 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"hello", "user_id"=>"77", "message"=>{"text"=>"hello", "user_id"=>"77"}}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (1.3ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "hello"], ["created_at", "2019-05-07 18:59:39.608254"], ["updated_at", "2019-05-07 18:59:39.608254"], ["user_id", 77]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"hello", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"hello", "user_id"=>"77"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.32ms)
+MessageChannel transmitting {"text"=>"hello", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"hello", "user_id"=>"77"}} (via streamed from message_channel)
+MessageChannel transmitting {"text"=>"hello", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"hello", "user_id"=>"77"}} (via streamed from message_channel)
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 3.3ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 11:59:47 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 11:59:48 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 11:59:48 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 11:59:48 -0700
+Started GET "/users" for ::1 at 2019-05-07 11:59:48 -0700
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mMessage Load (2.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (10.27ms)
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.74ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 2.0ms)
+
+
+Completed 200 OK in 22ms (Views: 17.2ms | ActiveRecord: 3.8ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:09 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:09 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:00:10 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for ::1 at 2019-05-07 12:00:10 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:10 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:00:10 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:00:10 -0700
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mMessage Load (2.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (25.52ms)
+  [1m[36mUser Load (29.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 33ms (Views: 30.1ms | ActiveRecord: 2.3ms)
+
+
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (3.07ms)
+Completed 200 OK in 52ms (Views: 22.4ms | ActiveRecord: 29.5ms)
+
+
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started GET "/messages" for ::1 at 2019-05-07 12:00:10 -0700
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+Started GET "/users" for ::1 at 2019-05-07 12:00:10 -0700
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (35.85ms)
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.8ms)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.46ms)
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.6ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:26 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:26 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:00:26 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:26 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for ::1 at 2019-05-07 12:00:26 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:26 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:00:26 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:00:26 -0700
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+  ↳ app/controllers/messages_controller.rb:5
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (2.37ms)
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.7ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (32.53ms)
+Completed 200 OK in 54ms (Views: 51.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/messages" for ::1 at 2019-05-07 12:00:26 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:00:26 -0700
+Processing by UsersController#index as */*
+Processing by MessagesController#index as */*
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (5.14ms)
+Completed 200 OK in 22ms (Views: 16.0ms | ActiveRecord: 4.2ms)
+
+
+  [1m[36mMessage Load (4.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (25.5ms)
+Completed 200 OK in 51ms (Views: 34.3ms | ActiveRecord: 4.5ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:28 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:00:28 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:28 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/users" for ::1 at 2019-05-07 12:00:28 -0700
+Started GET "/messages" for ::1 at 2019-05-07 12:00:28 -0700
+Processing by UsersController#index as */*
+Processing by MessagesController#index as */*
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.28ms)
+Completed 200 OK in 10ms (Views: 5.0ms | ActiveRecord: 4.9ms)
+
+
+  [1m[36mMessage Load (8.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (48.32ms)
+Completed 200 OK in 63ms (Views: 54.1ms | ActiveRecord: 8.8ms)
+
+
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/messages" for ::1 at 2019-05-07 12:00:37 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"hehehe", "user_id"=>"77", "message"=>{"text"=>"hehehe", "user_id"=>"77"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "hehehe"], ["created_at", "2019-05-07 19:00:37.400079"], ["updated_at", "2019-05-07 19:00:37.400079"], ["user_id", 77]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"hehehe", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"hehehe", "user_id"=>"77"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.29ms)
+Completed 200 OK in 8ms (Views: 1.1ms | ActiveRecord: 2.2ms)
+
+
+MessageChannel transmitting {"text"=>"hehehe", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"hehehe", "user_id"=>"77"}} (via streamed from message_channel)
+MessageChannel transmitting {"text"=>"hehehe", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"hehehe", "user_id"=>"77"}} (via streamed from message_channel)
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:41 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:00:42 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:00:42 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:00:42 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:00:42 -0700
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (8.15ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.8ms)
+
+
+Processing by UsersController#index as */*
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.71ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 1.0ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:01:00 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:01:00 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:01:01 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:01:01 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:01:01 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:01:01 -0700
+Processing by MessagesController#index as */*
+Started GET "/cable" for ::1 at 2019-05-07 12:01:01 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:01:01 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.21ms)
+  [1m[36mMessage Load (13.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.6ms)
+
+
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (8.77ms)
+Completed 200 OK in 26ms (Views: 12.5ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/messages" for ::1 at 2019-05-07 12:01:01 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:01:01 -0700
+Processing by UsersController#index as */*
+Processing by MessagesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.46ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.6ms)
+
+
+  [1m[36mMessage Load (10.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (19.21ms)
+Completed 200 OK in 33ms (Views: 22.2ms | ActiveRecord: 10.6ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/messages" for ::1 at 2019-05-07 12:01:07 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"1234", "user_id"=>"77", "message"=>{"text"=>"1234", "user_id"=>"77"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "1234"], ["created_at", "2019-05-07 19:01:07.571339"], ["updated_at", "2019-05-07 19:01:07.571339"], ["user_id", 77]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"1234", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"1234", "user_id"=>"77"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.32ms)
+Completed 200 OK in 9ms (Views: 1.2ms | ActiveRecord: 2.5ms)
+
+
+MessageChannel transmitting {"text"=>"1234", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"1234", "user_id"=>"77"}} (via streamed from message_channel)
+MessageChannel transmitting {"text"=>"1234", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"1234", "user_id"=>"77"}} (via streamed from message_channel)
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/canvas" for ::1 at 2019-05-07 12:02:00 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/messages" for ::1 at 2019-05-07 12:02:08 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"hello!", "user_id"=>"77", "message"=>{"text"=>"hello!", "user_id"=>"77"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "hello!"], ["created_at", "2019-05-07 19:02:08.015736"], ["updated_at", "2019-05-07 19:02:08.015736"], ["user_id", 77]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"hello!", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"hello!", "user_id"=>"77"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.28ms)
+MessageChannel transmitting {"text"=>"hello!", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"hello!", "user_id"=>"77"}} (via streamed from message_channel)
+MessageChannel transmitting {"text"=>"hello!", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"hello!", "user_id"=>"77"}} (via streamed from message_channel)
+Completed 200 OK in 9ms (Views: 1.6ms | ActiveRecord: 2.1ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:05:46 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:05:46 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:05:47 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:05:47 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for ::1 at 2019-05-07 12:05:47 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:05:47 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:05:47 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:05:47 -0700
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (7.99ms)
+  ↳ app/controllers/users_controller.rb:4
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 1.3ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.14ms)
+Completed 200 OK in 15ms (Views: 12.5ms | ActiveRecord: 1.7ms)
+
+
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started GET "/messages" for ::1 at 2019-05-07 12:05:47 -0700
+Processing by MessagesController#index as */*
+Started GET "/users" for ::1 at 2019-05-07 12:05:47 -0700
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (7.77ms)
+Processing by UsersController#index as */*
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.11ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.8ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:07:15 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:07:15 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:07:16 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:07:16 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:07:16 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:07:16 -0700
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (17.08ms)
+Processing by UsersController#index as */*
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.55ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.9ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:07:16 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:07:16 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:07:16 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:07:16 -0700
+Processing by UsersController#index as */*
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (9.15ms)
+  [1m[36mUser Load (12.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.6ms)
+
+
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.2ms)
+Completed 200 OK in 18ms (Views: 4.5ms | ActiveRecord: 12.8ms)
+
+
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/canvas" for ::1 at 2019-05-07 12:07:17 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/messages" for ::1 at 2019-05-07 12:07:23 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"12345", "user_id"=>"77", "message"=>{"text"=>"12345", "user_id"=>"77"}}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (0.7ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "12345"], ["created_at", "2019-05-07 19:07:23.514100"], ["updated_at", "2019-05-07 19:07:23.514100"], ["user_id", 77]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"12345", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"12345", "user_id"=>"77"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (2.66ms)
+MessageChannel transmitting {"text"=>"12345", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"12345", "user_id"=>"77"}} (via streamed from message_channel)
+Completed 200 OK in 16ms (Views: 4.2ms | ActiveRecord: 2.7ms)
+
+
+MessageChannel transmitting {"text"=>"12345", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"12345", "user_id"=>"77"}} (via streamed from message_channel)
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:10:33 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:10:33 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:10:34 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:10:34 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for ::1 at 2019-05-07 12:10:34 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:10:34 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:10:34 -0700
+Processing by MessagesController#index as */*
+Started GET "/users" for ::1 at 2019-05-07 12:10:34 -0700
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (7.81ms)
+Processing by UsersController#index as */*
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 1.4ms)
+
+
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.24ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/messages" for ::1 at 2019-05-07 12:10:34 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:10:34 -0700
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.28ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.7ms)
+
+
+  [1m[36mMessage Load (12.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (7.92ms)
+Completed 200 OK in 23ms (Views: 11.2ms | ActiveRecord: 12.0ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:10:35 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:10:36 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:10:36 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:10:36 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:10:36 -0700
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.33ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mMessage Load (9.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (8.96ms)
+Completed 200 OK in 23ms (Views: 12.8ms | ActiveRecord: 9.8ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/messages" for ::1 at 2019-05-07 12:10:40 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"1234567", "user_id"=>"77", "message"=>{"text"=>"1234567", "user_id"=>"77"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 77], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "1234567"], ["created_at", "2019-05-07 19:10:40.958778"], ["updated_at", "2019-05-07 19:10:40.958778"], ["user_id", 77]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"1234567", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"1234567", "user_id"=>"77"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.29ms)
+MessageChannel transmitting {"text"=>"1234567", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"1234567", "user_id"=>"77"}} (via streamed from message_channel)
+Completed 200 OK in 19ms (Views: 11.0ms | ActiveRecord: 2.4ms)
+
+
+MessageChannel transmitting {"text"=>"1234567", "user_id"=>"77", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"1234567", "user_id"=>"77"}} (via streamed from message_channel)
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/messages" for ::1 at 2019-05-07 12:11:03 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"12345w35werewrewrew", "user_id"=>"78", "message"=>{"text"=>"12345w35werewrewrew", "user_id"=>"78"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 78], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "12345w35werewrewrew"], ["created_at", "2019-05-07 19:11:03.068710"], ["updated_at", "2019-05-07 19:11:03.068710"], ["user_id", 78]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"12345w35werewrewrew", "user_id"=>"78", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"12345w35werewrewrew", "user_id"=>"78"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.33ms)
+MessageChannel transmitting {"text"=>"12345w35werewrewrew", "user_id"=>"78", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"12345w35werewrewrew", "user_id"=>"78"}} (via streamed from message_channel)
+MessageChannel transmitting {"text"=>"12345w35werewrewrew", "user_id"=>"78", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"12345w35werewrewrew", "user_id"=>"78"}} (via streamed from message_channel)
+Completed 200 OK in 8ms (Views: 2.1ms | ActiveRecord: 1.9ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:12:40 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Finished "/cable/" [WebSocket] for ::1 at 2019-05-07 12:12:41 -0700
+CanvasChannel stopped streaming from canvas_channel
+MessageChannel stopped streaming from message_channel
+Started GET "/cable" for ::1 at 2019-05-07 12:13:01 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:13:01 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/messages" for ::1 at 2019-05-07 12:13:01 -0700
+Started GET "/users" for ::1 at 2019-05-07 12:13:01 -0700
+Processing by MessagesController#index as */*
+Processing by UsersController#index as */*
+  [1m[36mMessage Load (1.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (8.63ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for ::1 at 2019-05-07 12:13:01 -0700
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.62ms)
+CanvasChannel is transmitting the subscription confirmation
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 1.9ms)
+
+
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"User 1", "user"=>{"name"=>"User 1"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (1.8ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User 1"], ["created_at", "2019-05-07 19:13:01.749457"], ["updated_at", "2019-05-07 19:13:01.749457"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.24ms)
+Completed 200 OK in 7ms (Views: 0.9ms | ActiveRecord: 2.8ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/canvas" for ::1 at 2019-05-07 12:13:02 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started GET "/cable" for ::1 at 2019-05-07 12:13:06 -0700
+Started GET "/cable/" [WebSocket] for ::1 at 2019-05-07 12:13:06 -0700
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/users" for ::1 at 2019-05-07 12:13:06 -0700
+Started GET "/messages" for ::1 at 2019-05-07 12:13:06 -0700
+Processing by MessagesController#index as */*
+  [1m[36mMessage Load (1.0ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  ↳ app/controllers/messages_controller.rb:5
+No serializer found for resource: #<Message id: 48, text: "hello", created_at: "2019-05-07 17:30:34", updated_at: "2019-05-07 17:30:34", user_id: 40>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with Message::ActiveRecord_Relation (18.75ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 1.0ms)
+
+
+Processing by UsersController#index as */*
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/users" for ::1 at 2019-05-07 12:13:06 -0700
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (1.48ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 2.7ms)
+
+
+Processing by UsersController#create as JSON
+  Parameters: {"name"=>"User 2", "user"=>{"name"=>"User 2"}}
+  [1m[35m (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:13
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "User 2"], ["created_at", "2019-05-07 19:13:06.348438"], ["updated_at", "2019-05-07 19:13:06.348438"]]
+  ↳ app/controllers/users_controller.rb:13
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:13
+[active_model_serializers] Rendered UserSerializer with ActiveModelSerializers::Adapter::Attributes (0.21ms)
+Completed 200 OK in 8ms (Views: 0.9ms | ActiveRecord: 3.7ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+Unsubscribing from channel: {"channel":"CanvasChannel"}
+CanvasChannel stopped streaming from canvas_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+Could not execute command from ({"command"=>"unsubscribe", "identifier"=>"{\"channel\":\"MessageChannel\"}"}) [RuntimeError - Unable to find subscription with identifier: {"channel":"MessageChannel"}]: /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:78:in `find' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:46:in `remove' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/subscriptions.rb:18:in `execute_command' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/connection/base.rb:87:in `dispatch_websocket_message' | /Users/MattShin/.rvm/gems/ruby-2.6.1/gems/actioncable-5.2.3/lib/action_cable/server/worker.rb:60:in `block in invoke'
+CanvasChannel is transmitting the subscription confirmation
+CanvasChannel is streaming from canvas_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/canvas" for ::1 at 2019-05-07 12:13:06 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 1ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/canvas" for ::1 at 2019-05-07 12:13:08 -0700
+Processing by CanvasController#create as JSON
+  Parameters: {"_json"=>[], "canva"=>{}}
+[ActionCable] Broadcasting to canvas_channel: <ActionController::Parameters {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} permitted: false>
+Completed 204 No Content in 0ms (ActiveRecord: 0.0ms)
+
+
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+CanvasChannel transmitting {"_json"=>[], "controller"=>"canvas", "action"=>"create", "canva"=>{}} (via streamed from canvas_channel)
+Started POST "/messages" for ::1 at 2019-05-07 12:13:16 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"this is user 1", "user_id"=>"79", "message"=>{"text"=>"this is user 1", "user_id"=>"79"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 79], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (0.6ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "this is user 1"], ["created_at", "2019-05-07 19:13:16.869120"], ["updated_at", "2019-05-07 19:13:16.869120"], ["user_id", 79]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"this is user 1", "user_id"=>"79", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"this is user 1", "user_id"=>"79"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.28ms)
+MessageChannel transmitting {"text"=>"this is user 1", "user_id"=>"79", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"this is user 1", "user_id"=>"79"}} (via streamed from message_channel)
+MessageChannel transmitting {"text"=>"this is user 1", "user_id"=>"79", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"this is user 1", "user_id"=>"79"}} (via streamed from message_channel)
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 1.8ms)
+
+
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Started POST "/messages" for ::1 at 2019-05-07 12:13:24 -0700
+Processing by MessagesController#create as JSON
+  Parameters: {"text"=>"this is user 2", "user_id"=>"80", "message"=>{"text"=>"this is user 2", "user_id"=>"80"}}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 80], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[36mMessage Create (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("text", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["text", "this is user 2"], ["created_at", "2019-05-07 19:13:24.460695"], ["updated_at", "2019-05-07 19:13:24.460695"], ["user_id", 80]]
+  ↳ app/controllers/messages_controller.rb:14
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/messages_controller.rb:14
+[ActionCable] Broadcasting to message_channel: <ActionController::Parameters {"text"=>"this is user 2", "user_id"=>"80", "controller"=>"messages", "action"=>"create", "message"=><ActionController::Parameters {"text"=>"this is user 2", "user_id"=>"80"} permitted: false>} permitted: false>
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Message (0.4ms)
+MessageChannel transmitting {"text"=>"this is user 2", "user_id"=>"80", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"this is user 2", "user_id"=>"80"}} (via streamed from message_channel)
+Completed 200 OK in 9ms (Views: 2.1ms | ActiveRecord: 2.3ms)
+
+
+MessageChannel transmitting {"text"=>"this is user 2", "user_id"=>"80", "controller"=>"messages", "action"=>"create", "message"=>{"text"=>"this is user 2", "user_id"=>"80"}} (via streamed from message_channel)
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
+Unsubscribing from channel: {"channel":"MessageChannel"}
+MessageChannel stopped streaming from message_channel
+MessageChannel is transmitting the subscription confirmation
+MessageChannel is streaming from message_channel
