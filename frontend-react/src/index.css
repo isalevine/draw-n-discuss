@@ -21,7 +21,7 @@ code {
   position: absolute;
   width: 1200px;
   height: 670px;
-  top: 50px;
+  top: 68px;
   left: 50px;
   border-style: solid;
   border-width: 5px;
@@ -74,7 +74,7 @@ code {
   position: absolute;
   width: 1200px;
   height: 2600px;
-  top: 50px;
+  top: 68px;
   left: 50px;
   border-style: solid;
   border-width: 3px;
@@ -90,4 +90,33 @@ code {
   border-width: 1px;
   border-radius: 1px;
   border-color: purple;
+}
+
+
+.edit-message-form {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1px;
+  border-color: yellow;
+}
+
+
+#header-bar {
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+/* #login-warning-bar {
+  background-color: orangered;
+  overflow: hidden;
+} */
+
+#welcome-message {
+  margin: auto;
+  width: 700px;
+  height: 200px;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 3px;
+  border-color: teal;
 }
