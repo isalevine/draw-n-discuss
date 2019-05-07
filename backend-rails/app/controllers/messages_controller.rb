@@ -15,17 +15,27 @@ class MessagesController < ApplicationController
     render json: @message
   end
 
+  # need to pass message ID to lookup, change component to an edit
+  # form, then save updates to the backend
   def update
     @message = Message.find(params[:id])
-    @message.update(message_params)
+    @message.update(text: params["_json"])
     render json: @message
   end
+
+
+  def destroy
+    @message = Message.find(params[:id])
+    @message.destroy
+  end
+
 
   private
 
   def message_params
     params.require(:message).permit(:text, :user_id)
   end
+
 
 
 end

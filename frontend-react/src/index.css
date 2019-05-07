@@ -91,3 +91,11 @@ code {
   border-radius: 1px;
   border-color: purple;
 }
+
+
+.edit-message-form {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1px;
+  border-color: yellow;
+}

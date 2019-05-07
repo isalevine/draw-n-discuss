@@ -10,7 +10,8 @@ class MessageList extends Component {
           {this.props.messages.map(message =>
             <Message
               message={message}
-              key={message.user_id}
+              key={Math.random()}
+              userId={message.user_id}
               text={message.text}
               name={sessionStorage.getItem('name')}
             />
