@@ -19,6 +19,8 @@ Bundler.require(*Rails.groups)
 
 module TestActionCableApi
   class Application < Rails::Application
+
+    # load "app/models/message.rb" if Rails.env.development? || Rails.env.test?
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 

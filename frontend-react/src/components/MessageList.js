@@ -4,6 +4,7 @@ import Message from './Message'
 class MessageList extends Component {
 
   render() {
+    if(this.props.messages.length > 0) {
     return (
       <div className="messageList">
         <ul>
@@ -18,7 +19,9 @@ class MessageList extends Component {
           )}
         </ul>
       </div>
-    )
+    )} else {
+      return <div></div>
+    }
   }
 
 }
