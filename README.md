@@ -60,9 +60,15 @@ Several bugs are known for this application--if you have suggested solutions, pl
 Created by Isa Levine and Matt Shin, May 2019.
 
 Special thanks to the packages and tutorials we used to help us utilize ActionCable and Canvas with React:
+
 [https://github.com/cpunion/react-actioncable-provider](https://github.com/cpunion/react-actioncable-provider)
+
 [https://medium.com/@dakota.lillie/using-action-cable-with-react-c37df065f296](https://medium.com/@dakota.lillie/using-action-cable-with-react-c37df065f296)
+
 [https://gist.github.com/srinidhiprabandham/91c56d8921b2c1293f92c24651a4c9a2](https://gist.github.com/srinidhiprabandham/91c56d8921b2c1293f92c24651a4c9a2)
+
 [http://jameshuynh.com/rails/react%20js/chat/2017/07/30/build-chat-using-react-js-and-rails-action-cable/](http://jameshuynh.com/rails/react%20js/chat/2017/07/30/build-chat-using-react-js-and-rails-action-cable/)
+
 [http://code-and.coffee/post/2015/collaborative-drawing-canvas-node-websocket/](http://code-and.coffee/post/2015/collaborative-drawing-canvas-node-websocket/)
+
 [https://stackoverflow.com/questions/19014250/rerender-view-on-browser-resize-with-react/39082160#39082160](https://stackoverflow.com/questions/19014250/rerender-view-on-browser-resize-with-react/39082160#39082160)
