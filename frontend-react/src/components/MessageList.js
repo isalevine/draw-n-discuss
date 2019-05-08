@@ -27,6 +27,7 @@ class MessageList extends Component {
           text={message.text}
           name={this.props.users[message.user_id]}
           tempName={sessionStorage.getItem('name')}
+          fetchUsers={this.props.fetchUsers}
         />
       )
     })

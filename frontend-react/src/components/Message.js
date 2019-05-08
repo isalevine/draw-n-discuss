@@ -11,7 +11,6 @@ class Message extends Component {
       edit: false,
       delete: false,
     }
-    this.displayName = ""
   }
 
   handleClickEdit = () => {
@@ -40,21 +39,13 @@ class Message extends Component {
       headers: HEADERS,
       body: JSON.stringify(newMessage)
     })
-  }
-
-  checkName = () => {
-    if (this.props.name === "" || !this.props.name) {
-      this.displayName = this.props.tempName
-    } else {
-      this.displayName = this.props.name
-    }
+    .then(this.props.fetchUsers())
   }
 
   render() {
-    this.checkName();
     return (
       <div className="message">
-        <p>{this.displayName}: {this.props.text}</p>
+        <p>{this.props.name}: {this.props.text}</p>
 
         {this.renderEditForm()}
 
