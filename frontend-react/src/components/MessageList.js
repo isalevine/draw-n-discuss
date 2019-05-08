@@ -2,6 +2,21 @@ import React, {Component} from 'react'
 import Message from './Message'
 
 class MessageList extends Component {
+  messagesEnd = React.createRef()
+
+  componentDidMount() {
+    this.scrollToBottom()
+  }
+
+  componentDidUpdate() {
+    this.scrollToBottom()
+  }
+  
+  scrollToBottom = () =>  {
+    if (this.messagesEnd.current) {
+      this.messagesEnd.current.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   createMessages = () => {
     return this.props.messages.map(message => {
@@ -24,6 +39,7 @@ class MessageList extends Component {
           <ul>
             {this.createMessages()}
           </ul>
+          <div ref={this.messagesEnd} />
         </div>
       )} else {
         return <div></div>
