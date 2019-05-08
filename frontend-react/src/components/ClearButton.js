@@ -10,7 +10,7 @@ class ClearButton extends Component {
   render() {
     return (
       <button id="clear-drawing-button" onClick={this.handleClick}>
-      Clear drawing!
+      Clear
       </button>
     )
   }

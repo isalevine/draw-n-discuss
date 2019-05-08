@@ -49,7 +49,9 @@ class UserForm extends Component {
   				<h1 id='enter'>Enter your name:</h1>
           <form id="user_form" onSubmit={this.handleSubmit}>
             <input id="user_input" type="text" name="user" onChange={this.handleChange} required/>
-            <input type="submit" value="Submit"/>
+            <br />
+            <br />
+            <input id="user_submit" type="submit" value="Submit"/>
           </form>
         </div>
       </div>

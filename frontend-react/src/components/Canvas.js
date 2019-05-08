@@ -7,6 +7,7 @@ import SaveDrawingButton from './SaveDrawingButton'
 import ClearButton from './ClearButton'
 
 
+
 class Canvas extends Component {
   constructor () {
     super ()

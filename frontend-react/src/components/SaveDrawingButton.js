@@ -10,7 +10,7 @@ class SaveDrawingButton extends Component {
   render() {
     return (
       <button id="save-drawing-button" onClick={this.handleClick}>
-      Save drawing!
+      Save
       </button>
     )
   }

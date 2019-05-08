@@ -24,8 +24,8 @@ class MessageForm extends React.Component {
     return (
       <div>
         <form id="message_form" onSubmit={this.handleSubmit}>
-          <input id="user_input" type="text" name="user" onChange={this.handleChange} required/>
-          <input type="submit" value="Send"/>
+          <input id="message_input" type="text" name="user" onChange={this.handleChange} required/>
+          <input id="message_submit" type="submit" value="Send"/>
         </form>
       </div>
     )

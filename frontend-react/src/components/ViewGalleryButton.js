@@ -10,7 +10,7 @@ class ViewGalleryButton extends Component {
   render() {
     return (
       <button id="view-gallery-button" onClick={this.handleClick.bind(this)}>
-        Click here to view saved drawings! (WARNING: YOUR DRAWING WILL BE ERASED)
+        Gallery
       </button>
     )
   }
