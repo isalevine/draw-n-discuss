@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 import './App.css';
 import {Route, BrowserRouter as Router} from 'react-router-dom'
 
@@ -17,18 +17,22 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
-        <div className="App">
+      <Fragment>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <Router>
+          <div className="App">
 
-        <HeaderBar />
+            <HeaderBar />
 
-        <Route exact path="/" render={(props) => <UserForm {...props} rerenderApp={this.rerenderApp} />} />
-        <Route path="/draw" component={GameWindow} />
-        <Route path="/gallery" component={CardContainer} />
+            <Route exact path="/" render={(props) => <UserForm {...props} rerenderApp={this.rerenderApp} />} />
+            <Route path="/draw" component={GameWindow} />
+            <Route path="/gallery" component={CardContainer} />
 
-        </div>
-      </Router>
-
+          </div>
+        </Router>
+      </Fragment>
     );
   }
 
