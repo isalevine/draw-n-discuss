@@ -90,7 +90,7 @@ code {
 
 .messageList {
   position: absolute;
-  width: 500px;
+  width: 455px;
   height: 425px;
   right: 20px;
   bottom: 80px;
@@ -124,6 +124,7 @@ code {
 }
 
 #header-bar {
+  height: 68px;
   background-color: lightblue;
   overflow: hidden;
   margin-right: auto;
