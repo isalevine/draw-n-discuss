@@ -1,7 +1,7 @@
 # Draw-n-Discuss
 ## A collaborative online drawing and chat app!
 
-![demo of Draw-n-Discuss]("./draw-n-discuss-demo.gif")
+![demo of Draw-n-Discuss](https://github.com/isalevine/draw-n-discuss/blob/master/draw-n-discuss-demo.gif)
 
 Draw-n-Discuss is a simple online web-app featuring a saveable canvas for drawing, and a chatroom for talking with other users. Draw-n-Discuss utilizes both React and Rails' ActionCable to provide real-time updates to drawings, conversations, and the gallery of saved art.
 
