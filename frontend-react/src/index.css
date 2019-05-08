@@ -19,6 +19,7 @@ code {
 
 }
 
+
 #game-window {
   position: absolute;
   width: 1200px;
@@ -123,6 +124,10 @@ code {
 #header-bar {
   background-color: lightblue;
   overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 1400px;
+  max-width: 100%;
 }
 
 /* #login-warning-bar {

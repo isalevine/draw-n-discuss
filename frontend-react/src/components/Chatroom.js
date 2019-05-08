@@ -26,7 +26,6 @@ class Chatroom extends Component {
   }
 
   addNewMessage = (message) => {
-
     fetch(`${API_ROOT}/messages`, {
       method: 'POST',
       headers: HEADERS,
@@ -35,6 +34,7 @@ class Chatroom extends Component {
         'user_id': sessionStorage.getItem('id')
       })
     })
+    .then(this.fetchMessages())
   }
 
   async handleReceivedMessages(message) {
