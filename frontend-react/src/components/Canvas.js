@@ -91,7 +91,9 @@ class Canvas extends Component {
 
   handleReceivedPaths = (paths) => {
     console.log('handleReceivedPaths', paths)
-    this.state.paths = paths._json
+    this.setState({
+      paths: paths._json
+    })
     this.draw()
   }
 
