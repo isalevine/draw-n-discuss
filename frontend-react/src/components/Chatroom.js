@@ -10,6 +10,7 @@ class Chatroom extends Component {
     this.state = {
       messages: []
     }
+    this.handleReceivedMessages = this.handleReceivedMessages.bind(this)
   }
 
   componentDidMount = () => {
@@ -25,9 +26,7 @@ class Chatroom extends Component {
   }
 
   addNewMessage = (message) => {
-    // this.setState({
-    //   messages: [...this.state.messages, message]
-    // })
+
     fetch(`${API_ROOT}/messages`, {
       method: 'POST',
       headers: HEADERS,
@@ -38,11 +37,9 @@ class Chatroom extends Component {
     })
   }
 
-  handleReceivedMessages = (message) => {
-    // this.setState({
-    //   messages: [...this.state.messages, message]
-    // })
-    this.fetchMessages()
+  async handleReceivedMessages(message) {
+    this.props.fetchUsers()
+    await this.fetchMessages()
   }
 
   render() {
@@ -60,6 +57,7 @@ class Chatroom extends Component {
         <MessageList
           messages={this.state.messages}
           users={this.props.users}
+          fetchUsers={this.props.fetchUsers}
         />
 
       </div>

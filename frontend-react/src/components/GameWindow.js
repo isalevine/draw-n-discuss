@@ -7,7 +7,7 @@ import {API_ROOT, HEADERS} from '../constants/index.js'
 
 class GameWindow extends Component {
 
-  constructor() {
+  constructor(props) {
     super()
     this.state = {
       users: {}
@@ -15,10 +15,13 @@ class GameWindow extends Component {
   }
 
   componentDidMount() {
+    this.fetchUsers()
+  }
+
+  fetchUsers = () => {
     fetch(`${API_ROOT}/users`)
     .then(resp => resp.json())
     .then(data => {
-      // console.log("fetch users data: ", data)
       let obj = {}
       data.forEach(user => {
         obj[user.id] = user.name
@@ -31,7 +34,7 @@ class GameWindow extends Component {
     return (
       <div id="game-window">
         <Canvas saveDrawing={this.saveDrawing}/>
-        <Chatroom users={this.state.users}/>
+        <Chatroom users={this.state.users} fetchUsers={this.fetchUsers}/>
         <ViewGalleryButton history={this.props.history}/>
       </div>
     )
