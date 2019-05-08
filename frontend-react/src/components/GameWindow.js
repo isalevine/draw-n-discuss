@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import Canvas from './Canvas'
 import Chatroom from './Chatroom'
 import ViewGalleryButton from './ViewGalleryButton'
-import {API_ROOT, HEADERS} from '../constants/index.js'
+import {API_ROOT} from '../constants/index.js'
 
 
 class GameWindow extends Component {

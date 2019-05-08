@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import GalleryCard from './GalleryCard'
-import {API_ROOT, HEADERS} from '../constants/index.js'
+import {API_ROOT} from '../constants/index.js'
 import ViewGameButton from './ViewGameButton'
 
 
