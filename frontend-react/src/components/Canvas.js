@@ -75,8 +75,8 @@ class Canvas extends Component {
   handleMouseMove = (e) => {
     if (!this.drawing) return;
 
-    let x = ~~((e.clientX - this.rect.left) * 10) / 10
-    let y = ~~((e.clientY - this.rect.top) * 10) / 10
+    let x = ~~((e.pageX - this.rect.left) * 10) / 10
+    let y = ~~((e.pageY - this.rect.top) * 10) / 10
     this.paths[this.paths.length - 1].list.push(x, y);
     this.draw();
   }
