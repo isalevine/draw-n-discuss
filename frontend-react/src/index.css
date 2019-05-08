@@ -31,8 +31,9 @@ code {
   border-style: solid;
   border-width: 5px;
   border-radius: 5px;
-  border-color: blue;
-  background-color: khaki;
+  border-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0);
+
 }
 
 #canvas {
@@ -41,7 +42,7 @@ code {
   left: 60px;
   border-style: solid;
   border-width: 3px;
-  border-color: green;
+  border-color: teal;
   background-color: white;
 }
 
@@ -84,15 +85,15 @@ code {
   left: 635px;
   border-style: solid;
   border-width: 3px;
-  border-color: green;
-  background-color: lavender;
+  border-color: teal;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .messageList {
   position: absolute;
   width: 455px;
   height: 425px;
-  right: 20px;
+  right: 35px;
   bottom: 80px;
   overflow: scroll
 }
@@ -108,8 +109,8 @@ code {
   border-style: solid;
   border-width: 3px;
   border-radius: 3px;
-  border-color: red;
-  background-color: coral;
+  border-color: teal;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .card {
@@ -119,13 +120,14 @@ code {
   border-style: solid;
   border-width: 1px;
   border-radius: 1px;
-  border-color: purple;
+  border-color: teal;
   background-color: white;
+  margin: 10px;
 }
 
 #header-bar {
+  background-color: rgba(255, 255, 255, 0.6);
   height: 68px;
-  background-color: lightblue;
   overflow: hidden;
   margin-right: auto;
   margin-left: auto;
@@ -143,7 +145,7 @@ code {
   border-width: 5px;
   border-radius: 5px;
   border-color: teal;
-  background-color: lavender;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 #user_submit {
@@ -314,4 +316,34 @@ button:hover {
   background: #fff;
   box-shadow: 0px 2px 10px 5px #1abc9c;
   color: #000;
+}
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
 }
