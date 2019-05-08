@@ -22,6 +22,7 @@ class GameWindow extends Component {
     fetch(`${API_ROOT}/users`)
     .then(resp => resp.json())
     .then(data => {
+      console.log(data)
       let obj = {}
       data.forEach(user => {
         obj[user.id] = user.name

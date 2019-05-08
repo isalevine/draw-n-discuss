@@ -9,8 +9,8 @@ class ViewGameButton extends Component {
 
   render() {
     return (
-      <button id="view-game-button" onClick={this.handleClick.bind(this)}>
-        Click here to go back to drawing!
+      <button id="view-game-button" className="view-game-button" onClick={this.handleClick.bind(this)}>
+        Back to drawing!
       </button>
     )
   }

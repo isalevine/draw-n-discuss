@@ -45,7 +45,7 @@ class Message extends Component {
   render() {
     return (
       <div className="message">
-        <p>{this.props.name}: {this.props.text}</p>
+        <p><strong>{this.props.name}</strong>: {this.props.text}</p>
 
         {this.renderEditForm()}
 

@@ -49,7 +49,8 @@ class Chatroom extends Component {
           channel={{channel: 'MessageChannel'}}
           onReceived={this.handleReceivedMessages}
         />
-      <strong>New Message:
+      <br />
+      <strong>Chatroom:
         <MessageForm
           addNewMessage={this.addNewMessage}
         />
