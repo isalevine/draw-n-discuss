@@ -45,6 +45,12 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
 
+
+  # suggestion from: https://stackoverflow.com/a/38621949
+  config.action_cable.url = "wss://draw-n-discuss-backend-rails.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 

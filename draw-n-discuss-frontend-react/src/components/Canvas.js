@@ -99,7 +99,7 @@ class Canvas extends Component {
 
   sendPaths = () => {
     // console.log('json', JSON.stringify(this.state.paths))
-    fetch(`${API_ROOT}/canvas`, {
+    fetch(`${API_ROOT}canvas`, {
       method: "POST",
       headers: HEADERS,
       body: JSON.stringify(this.state.paths)
