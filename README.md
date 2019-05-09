@@ -56,6 +56,8 @@ Several bugs are known for this application--if you have suggested solutions, pl
 
 4. Canvas cursor -- after viewing gallery and returning to the canvas, drawn lines do not always follow the cursor; we suspect the issue has to do with window-resizing affecting how the canvas detects drawing locations
 
+5. Simultaneous drawing -- if two users are drawing simultaneously, the canvas appears to do vector-drawing (radiating lines from a single point)
+
 ## Credits
 Created by Isa Levine and Matt Shin, May 2019.
 
